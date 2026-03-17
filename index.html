@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 2do Aniversario - J & C</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="heart-container"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="main-title">Josué & Carolina</h1>
+            <p class="subtitle">Nuestro viaje juntos lleva:</p>
+            
+            <div id="timer" class="timer">
+                <div class="timer-segment"><span id="days">00</span><p>Días</p></div>
+                <div class="timer-segment"><span id="hours">00</span><p>Hrs</p></div>
+                <div class="timer-segment"><span id="minutes">00</span><p>Min</p></div>
+                <div class="timer-segment"><span id="seconds">00</span><p>Seg</p></div>
+            </div>
+
+            <div class="spotify-card">
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3kcr3teEgyTOVIAxMPOPeO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>            </div>
+        </div>
+    </header>
+
+    <main id="gallery" class="photo-grid"></main>
+
+    <section class="video-container">
+        <h2>Un mensaje desde el corazón</h2>
+        <div class="video-box">
+            <video controls>
+                <source src="images/nuestro-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="final-tag">¡Te amo por siempre!</p>
+    </section>
+
+    <script src="efectos.js"></script>
+</body>
+</html>
