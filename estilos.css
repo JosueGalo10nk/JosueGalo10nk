@@ -83,3 +83,199 @@ body {
 
 .video-container { text-align: center; padding: 100px 20px; }
 .video-box video { width: 100%; max-width: 800px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+/* Estilos extra para el Header mejorado */
+.date-highlight {
+    margin: 20px 0;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 77, 109, 0.3);
+    border-bottom: 1px solid rgba(255, 77, 109, 0.3);
+}
+
+.start-date {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 5px;
+}
+
+.date-phrase {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Sección del Poema Estilo Carta */
+.intro-poem-section {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+    background: #fff; /* Un blanco puro para resaltar del fondo rosado */
+}
+
+.poem-container {
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+    padding: 40px;
+    border: 1px double #ff4d6d;
+    background-color: #fffafb;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.poem-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.final-promise {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 2.2rem !important;
+    color: var(--accent);
+    margin-top: 30px;
+}
+
+.signature {
+    display: block;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Spotify Card más limpia */
+.spotify-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+/* Sección de Izzy */
+.izzy-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fff5f5, #ffffff);
+}
+
+.izzy-intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.izzy-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--accent); /* El rosa/rojo que estamos usando */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.paw-icon {
+    background: white;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(255, 77, 109, 0.2);
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.izzy-btn:hover .paw-icon {
+    transform: scale(1.1) rotate(-10deg);
+    box-shadow: 0 15px 30px rgba(255, 77, 109, 0.4);
+    background-color: #fff0f3;
+}
+
+.izzy-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Pequeña animación de rebote para llamar la atención */
+@keyframes bouncePaw {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.izzy-btn {
+    animation: bouncePaw 3s infinite ease-in-out;
+}
+
+
+
+/*** Estilos para Izzy HTML */
+/* Estilos específicos para la página de Izzy */
+.izzy-page {
+    background-color: #fffaf0; /* Un color crema más cálido para Izzy */
+}
+
+.izzy-header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.izzy-subtitle {
+    font-family: 'Poppins', sans-serif;
+    color: #8d99ae;
+    letter-spacing: 1px;
+}
+
+.izzy-photos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.izzy-quote-box {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.izzy-phrase {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #4a4e69;
+    line-height: 1.4;
+}
+
+.back-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    border: 2px solid var(--accent);
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+/* Responsivo para las fotos de Izzy */
+@media (max-width: 600px) {
+    .izzy-photos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

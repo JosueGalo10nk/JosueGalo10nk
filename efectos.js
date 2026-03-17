@@ -40,8 +40,10 @@ fotos.forEach(item => {
 });
 
 // 3. CONTADOR DE TIEMPO (Desde 17 de Marzo 2024)
+// Asegúrate de que esta línea esté así:
 const startDate = new Date('March 17, 2024 00:00:00').getTime();
 
+// ... el resto del código que genera las fotos y los corazones se mantiene igual
 function updateTimer() {
     const now = new Date().getTime();
     const diff = now - startDate;
